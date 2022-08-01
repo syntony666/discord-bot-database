@@ -24,8 +24,7 @@ module.exports = {
       queryInterface.addColumn('guilds', 'leave_message', {
         type: Sequelize.STRING,
         allowNull: true
-      }),
-      
+      })
     ])
   },
 
@@ -36,5 +35,11 @@ module.exports = {
      * Example:
      * await queryInterface.dropTable('users');
      */
+     return Promise.all([
+      queryInterface.removeColumn('guilds', 'join_channel_id'),
+      queryInterface.removeColumn('guilds', 'join_message'),
+      queryInterface.removeColumn('guilds', 'leave_channel_id'),
+      queryInterface.removeColumn('guilds', 'leave_message')
+    ])
   }
 };
