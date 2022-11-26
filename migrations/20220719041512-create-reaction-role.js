@@ -32,7 +32,7 @@ module.exports = {
         allowNull: false,
         type: Sequelize.DATE
       }
-    }, {charset: 'utf8mb4'});
+    });
   },
   async down(queryInterface, Sequelize) {
     await queryInterface.dropTable('reaction_roles');
