@@ -1,3 +1,5 @@
+> # The Repo had Merged into Main Project ([syntony666/discord-bot](https://github.com/syntony666/discord-bot))
+
 # Discord Bot Database
 
 [![Package - discord.js](https://img.shields.io/github/package-json/dependency-version/syntony666/discord-bot-database/sequelize?logoColor=white&color=blue)](https://www.npmjs.com/package/sequelize)
